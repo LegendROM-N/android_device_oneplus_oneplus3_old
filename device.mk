@@ -325,6 +325,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini
 
+# inherit from qcom-common
+include device/qcom/common/common.mk
+
 # Inherit from oppo-common
 $(call inherit-product, device/oppo/common/common.mk)
 I_WANT_A_QUAIL_STAR=true

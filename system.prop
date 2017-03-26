@@ -142,4 +142,4 @@ persist.timed.enable=true
 # Wifi
 wifi.interface=wlan0
 
-ro.legendrom.version=13.0
+ro.legendrom.version=14.0

@@ -152,6 +152,7 @@ SF_VSYNC_EVENT_PHASE_OFFSET_NS := 6000000
 #TARGET_USES_HWC2 := true
 
 # EAS
+ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
 
 # Enable dexpreopt to speed boot time

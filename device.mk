@@ -21,7 +21,7 @@
 # definition file).
 #
 
-$(call inherit-product-if-exists, vendor/oneplus/oneplus3/oneplus3-vendor.mk)
+$(call inherit-product, vendor/oneplus/oneplus3/oneplus3-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -157,8 +157,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap \
-    libcamera_shim
+    Snap
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
@@ -193,10 +192,6 @@ PRODUCT_PACKAGES += \
 # For android_filesystem_config.h
 PRODUCT_PACKAGES += \
     fs_config_files
-
-# Gello
-PRODUCT_PACKAGES += \
-    Gello
 
 # GPS
 PRODUCT_PACKAGES += \
